@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px; /* Increase the logo size */
+}
+
+.login-container, .sheets-container {
+    max-width: 800px; /* Increase the container width */
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px; /* Increase the container padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1, .sheets-container h1, .sheets-container h2 {
+    text-align: center;
+    font-size: 36px; /* Increase the font size for headings */
+    margin-bottom: 20px; /* Add more space below headings */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container button {
+    width: 100%;
+    padding: 20px; /* Increase the padding for form elements */
+    margin-bottom: 20px; /* Add more space between form elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 20px; /* Increase the font size for buttons */
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.sheets-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sheets-container li {
+    margin-bottom: 30px; /* Add more space between sheet cards */
+}
+
+.sheets-container .sheet-card {
+    padding: 30px; /* Increase the padding for sheet cards */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.sheets-container .sheet-card a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 24px; /* Increase the font size for sheet links */
+}
+
+.sheets-container .sheet-card a:hover {
+    text-decoration: underline;
+}
+
+.sheets-container h2 {
+    font-size: 30px; /* Increase the font size for sheet titles */
+}

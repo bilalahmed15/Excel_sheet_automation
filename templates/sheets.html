@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Sheets Links</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="sheets-container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1>Welcome, {{ username }}!</h1>
+        <h2>Google Sheets Links</h2>
+        <ul>
+            {% for sheet in sheets %}
+            <li>
+                <div class="sheet-card">
+                    <a href="/open_sheet/{{ loop.index0 }}">{{ sheet.name }}</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <p><a href="/logout">Logout</a></p>
+    </div>
+</body>
+</html>
